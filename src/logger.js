@@ -1,32 +1,31 @@
+/* eslint-disable no-console */
 const chalk = require('chalk');
 const inquirer = require('inquirer');
 
 module.exports = {
-    rightAnswer: message => {
-        console.log(
-            chalk.white.bgGreen.bold(message)
-        );
-    },
+  rightAnswer: (...args) => {
+    console.log(
+      chalk.white.bgGreen.bold(args),
+    );
+  },
 
-    wrongAnswer: message => {
-        console.log(
-            chalk.white.bgRed.bold(message)
-        );
-    },
+  wrongAnswer: (...args) => {
+    console.log(
+      chalk.white.bgRed.bold(args),
+    );
+  },
 
-    info: message => {
-        console.log(
-            chalk.green(message)
-        );
-    },
+  info: (...args) => {
+    console.log(
+      chalk.green(args),
+    );
+  },
 
-    error: message => {
-        console.log(
-            chalk.red(message)
-        );
-    },
+  error: (...args) => {
+    console.log(
+      chalk.red(args),
+    );
+  },
 
-    prompt: promptData => {
-        return inquirer.prompt(promptData);
-    }
-}
+  prompt: promptData => inquirer.prompt(promptData),
+};
