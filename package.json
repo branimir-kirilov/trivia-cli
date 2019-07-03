@@ -1,0 +1,31 @@
+{
+  "name": "trivia-cli",
+  "version": "1.0.0",
+  "description": "Trivia questions in the terminal. Using opentdb. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "decode-html": "^2.0.0",
+    "figlet": "^1.2.3",
+    "inquirer": "^6.3.1"
+  },
+  "bin": {
+    "trivia-cli": "./src/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/*.test.js"
+    ]
+  }
+}
