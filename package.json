@@ -14,15 +14,15 @@
     "chalk": "^2.4.2",
     "decode-html": "^2.0.0",
     "figlet": "^1.2.3",
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.5.0"
   },
   "bin": {
     "trivia-cli": "./src/index.js"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import": "^2.18.2",
     "jest": "^24.8.0"
   },
   "jest": {
