@@ -5,5 +5,9 @@ CLI quiz game using **NodeJS** and the [**Open Trivia Database**](https://opentd
 
 ## How to play
 
+1. `$ npx trivia-cli`
+
+  OR
+
 1. `$ npm install -g trivia-cli`
 2. `$ trivia-cli`
